@@ -1,0 +1,39 @@
+{
+  "name": "ms-facturas",
+  "version": "1.0.0",
+  "description": "API Rest Facturas",
+  "main": "FacturasApp.js",
+  "scripts": {
+    "eslint": "eslint app.js",
+    "start": "DEBUG=app nodemon src/FacturasApp.js",
+    "pretest": " echo 'TRUNCATE TABLE Facturas;' | /usr/local/mysql/bin/mysql --user=root --password=password Facturas",
+    "test": "DEBUG=app mocha tests/*Test.js"
+  },
+  "author": "Armando Pacenza",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.0",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "mocha": "^8.0.1",
+    "should": "^13.2.3",
+    "supertest": "^4.0.2"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "DEV",
+      "PORT": "4000"
+    }
+  }
+}

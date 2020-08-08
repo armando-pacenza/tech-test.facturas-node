@@ -32,8 +32,13 @@
     ],
     "delay": "2500",
     "env": {
-      "NODE_ENV": "DEV",
-      "PORT": "4000"
+      "NODE_ENV": "develovment",
+      "PORT": 8084,
+      "MYSQL_PORT": 5000,
+      "MYSQL_HOST": "pacho.com.ar",
+      "MYSQL_USER": "root",
+      "MYSQL_PASSWORD": "password",
+      "MYSQL_DATABASE": "Facturas"
     }
   }
 }

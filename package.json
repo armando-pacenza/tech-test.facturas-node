@@ -9,7 +9,7 @@
     "pretest": " echo 'TRUNCATE TABLE Facturas;' | /usr/local/mysql/bin/mysql --user=root --password=password Facturas",
     "test": "DEBUG=app mocha tests/*Test.js"
   },
-  "author": "Armando Pacenza",
+  "author": "Armando N. Pacenza",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
